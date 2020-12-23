@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Gradetorrent is a simple crowdsourcing app for grading of assignments in a peer-peer fashion
 
-Things you may want to cover:
 
-* Ruby version
+* Built on Rails 6.0
 
-* System dependencies
+* Supports creation of assignments by teachers
 
-* Configuration
+* Supports file submission of files by students to a specified assignment
 
-* Database creation
+#### Follows a 3 phase systems with separate deadlines
+- Phase 1 - Assignment submission phase, work is released by teacher to class 
 
-* Database initialization
+- Phase 2 - Evaluation phase, students are assigned work from their peers to grade
 
-* How to run the test suite
+- Phase 3 - Grade aggregation phase, students evaluations are collected and weighted
 
-* Services (job queues, cache servers, search engines, etc.)
+- Phase 4 - Results, students are scored on the accuracy of the evaluation relative to their peers 
+in addition
+to the correctness of their own work
 
-* Deployment instructions
+* Evaluations distributed to other students in the same class
 
-* ...
+* Uses a specific algorithm to ensure fairness and accuracy of grades
+
+
+test with rails test
+
