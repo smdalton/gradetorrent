@@ -1,11 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  type: 1
-  address: MyString
+  name: College One
+  state: Washington
 
 two:
-  name: MyString
-  type: 1
-  address: MyString
+  name: College Two
+  state: Washington
