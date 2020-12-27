@@ -9,7 +9,7 @@ ActiveSupport::NumberHelper.number_to_human(5)
 3.times do |i|
   Organization.create! do |org|
     ActiveSupport::NumberHelper.number_to_human(5)
-    org.name = "College #{i} of the PNW"
+    org.name = Faker::University.name
     org.state = 'Washington'
   end
 end
@@ -29,10 +29,16 @@ end
 
 5.times do |i|
   Course.create! do |c|
-    c.name = Faker::Hipster.sentence(word_count: 2)
+    c.name = Faker::Educator.course_name
     c.description = Faker::Hipster.sentence(word_count: 6)
     c.organization = Organization.first
     c.start_date = DateTime.now
     c.end_date = DateTime.now + 1.month
+  end
+end
+
+25.times do |i|
+  Assignment.create! do |a|
+    a.name = "Study of #{Faker::Space.nasa_space_craft}"
   end
 end
