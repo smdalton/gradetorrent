@@ -10,9 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_27_025525) do
+ActiveRecord::Schema.define(version: 2020_12_29_053205) do
 
   create_table "assignments", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
     t.text "rubric"
     t.date "assigned_on"
     t.date "due_by"
@@ -47,7 +49,7 @@ ActiveRecord::Schema.define(version: 2020_12_27_025525) do
     t.string "encrypted_password", default: "", null: false
     t.string "name"
     t.datetime "dob"
-    t.integer "role"
+    t.integer "role", default: 0
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

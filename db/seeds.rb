@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 ActiveSupport::NumberHelper.number_to_human(5)
+
+
 3.times do |i|
   Organization.create! do |org|
     ActiveSupport::NumberHelper.number_to_human(5)
@@ -14,18 +16,21 @@ ActiveSupport::NumberHelper.number_to_human(5)
   end
 end
 
+
 begin
-  5.times do |i|
+  10.times do |i|
     User.create! do |u|
-      u.email = "smd#{i + 1}@gmail.com"
+      u.email = Faker::Internet.email
       u.password = 'password'
-      u.name = "Shane #{i}"
+      u.encrypted_password = "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
+      u.name = Faker::Fantasy.name
       u.organization = Organization.first
     end
   end
 rescue Exception => e
   ## Skipped email unique constraint checking with rescue block
 end
+
 
 5.times do |i|
   Course.create! do |c|
@@ -40,5 +45,12 @@ end
 25.times do |i|
   Assignment.create! do |a|
     a.name = "Study of #{Faker::Space.nasa_space_craft}"
+    a.description = Faker::Hacker.say_something_smart
+    a.rubric = Faker::Hacker.say_something_smart
+    a.assigned_on = DateTime.now
+    a.due_by = DateTime.now + 1.week
+    a.eval_by = DateTime.now + 10.days
+    a.max_score = 20
+    a.course = i.even? ? Course.first : Course.second
   end
 end
