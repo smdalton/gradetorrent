@@ -1,12 +1,14 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
   def setup
     @user = users(:shane)
     @organization = organizations(:one)
+  end
+
+  test 'true' do
+    assert true
   end
 
   test 'user requires organization' do
@@ -26,6 +28,7 @@ class UserTest < ActiveSupport::TestCase
       user1.save
     end
     puts User.count
-
   end
+
+
 end

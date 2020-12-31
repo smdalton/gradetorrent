@@ -5,15 +5,36 @@
 # below each fixture, per the syntax in the comments below
 #
 
-
-
 shane:
   email: shane@smd.com
   name: shane
   encrypted_password: "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
   organization: one
+
+admin:
+  email: admin@admin.com
+  name: Administraticus
+  encrypted_password: "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
+  organization: one
+  type: Administrator
+
+teacher:
+  email: teaches@school.place
+  name: Test Teacher
+  encrypted_password: "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
+  organization: one
+  type: Teacher
+
 steve:
   email: steve@steve.com
   name: steve
   encrypted_password: "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
   organization: two
+  type: Student
+
+student:
+  email: student@school.place
+  name: Test Student
+  encrypted_password: "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
+  organization: one
+  type: Student

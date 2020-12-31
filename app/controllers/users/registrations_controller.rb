@@ -10,9 +10,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    # Ensure that any post request through this route is alwys created
+    # As a student
+    params[:user] = params[:user]&.merge(type: 'Student')
+    puts params[:user]
+    super
+  end
 
   # GET /resource/edit
   # def edit
@@ -42,7 +46,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:organization_id])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:organization_id, :type])
   end
 
   # If you have extra params to permit, append them to the sanitizer.

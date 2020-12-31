@@ -5,13 +5,32 @@ class CourseTest < ActiveSupport::TestCase
   #   assert true
   # end
   def setup
+    @org = organizations(:one)
+    @teacher = users(:teacher)
+    @student = users(:student)
+    @admin = users(:admin)
+    @course = courses(:one)
+  end
+
+  test 'course does not save unless organization present' do
+    assert_no_difference 'Course.count' do
+      Course.create(name: 'Test Name')
+
+    end
+  end
+
+  test 'course does not save unless assosciated user present' do
+    assert_no_difference 'Course.count' do
+      Course.create(name: 'Teacherless Course', organization: @org)
+    end
+  end
+
+  test 'course not editable by student' do
 
   end
 
-  # test 'course requires organization' do
-  #   assert_no_difference 'Course.count' do
-  #
-  #     Course.new(name: )
-  #   end
-  # end
+  test 'course editable by teacher' do
+
+  end
+
 end
