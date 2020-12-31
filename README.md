@@ -9,6 +9,8 @@ Gradetorrent is a simple crowdsourcing app for grading of assignments in a peer-
 
 * Supports file submission of files by students to a specified assignment
 
+* Supports peer grading of assignments and an administrative backend for teachers to manage classes
+
 #### Follows a 3 phase systems with separate deadlines
 - Phase 1 - Assignment submission phase, work is released by teacher to class 
 
