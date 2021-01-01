@@ -11,10 +11,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   def create
-    # Ensure that any post request through this route is alwys created
-    # As a student
+    # Ensure that any post request through this route is always created as student
+
     params[:user] = params[:user]&.merge(type: 'Student')
-    puts params[:user]
+    # puts params[:user]
     super
   end
 
