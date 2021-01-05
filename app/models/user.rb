@@ -8,6 +8,7 @@ class User < ApplicationRecord
   # enum role: [:student, :teacher, :admin]
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
   def teacher?
     type == 'Teacher'
   end

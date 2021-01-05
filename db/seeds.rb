@@ -88,9 +88,9 @@ end
 
 def assign_one_teacher_to_each_course
   teachers = Teacher.all.to_a
-  courses = Course.all.limit(teachers.count).to_a
+  courses = Course.all.limit(teachers.count)
   courses.length.times do |i|
-    CourseUser.create!(course: courses[i], user: teachers[i] )
+    CourseUser.create!(course: courses[i], user: teachers[i])
   end
 end
 

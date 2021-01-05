@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c07b790-85b4-467d-8699-a5c8d221a6fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradetorrent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradetorrent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/course.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/course.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/student.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/student.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_nav.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_nav.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ERB File" />
+        <option value="Ruby File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1m4CZ7PlnAiNTHMiZwktUa9LuEy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/layouts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/fixtures" />
+      <recent name="$PROJECT_DIR$/test/controllers/temp_fictures" />
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
+      <recent name="$PROJECT_DIR$/db/migrate" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="rails g controller" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="_nav.html.erb" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gradetorrent/app/views/layouts/_nav.html.erb" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug._nav.html.erb" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c07b790-85b4-467d-8699-a5c8d221a6fb" name="Default Changelist" comment="" />
+      <created>1608743528514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608743528514</updated>
+      <workItem from="1608743529593" duration="15570000" />
+      <workItem from="1609026966757" duration="43937000" />
+      <workItem from="1609456305467" duration="2785000" />
+      <workItem from="1609459249278" duration="20292000" />
+      <workItem from="1609799541768" duration="9259000" />
+      <workItem from="1609875970574" duration="848000" />
+      <workItem from="1609876835759" duration="215000" />
+      <workItem from="1609877061530" duration="25000" />
+      <workItem from="1609877098641" duration="66000" />
+      <workItem from="1609877175763" duration="3972000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="289" y="-974" key="#Plugins" timestamp="1609883993560">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="289" y="-974" key="#Plugins/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609883993560" />
+    <state x="298" y="-1098" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609875735215">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="298" y="-1098" key="#com.intellij.execution.impl.EditConfigurationsDialog/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609875735215" />
+    <state x="298" y="-1098" key="#com.intellij.execution.impl.EditConfigurationsDialog/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609295288431" />
+    <state x="-51" y="-922" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1609885125988">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="-51" y="-922" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609885125988" />
+    <state x="701" y="-998" key="#xdebugger.evaluate" timestamp="1609883850071">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="701" y="-998" key="#xdebugger.evaluate/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609883850071" />
+    <state x="52" y="-1140" width="1722" height="805" key="DiffContextDialog" timestamp="1609022231963">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="52" y="-1140" width="1722" height="805" key="DiffContextDialog/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609022231963" />
+    <state x="777" y="-834" key="Github.ShareDialog" timestamp="1608762163153">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="777" y="-834" key="Github.ShareDialog/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1608762163153" />
+    <state width="2107" height="333" key="GridCell.Tab.0.bottom" timestamp="1609884083377">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.0.bottom/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083377" />
+    <state width="2107" height="333" key="GridCell.Tab.0.center" timestamp="1609884083376">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.0.center/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083376" />
+    <state width="2107" height="333" key="GridCell.Tab.0.left" timestamp="1609884083375">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.0.left/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083375" />
+    <state width="2107" height="333" key="GridCell.Tab.0.right" timestamp="1609884083377">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.0.right/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083376" />
+    <state width="2107" height="333" key="GridCell.Tab.1.bottom" timestamp="1609884083378">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.1.bottom/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083378" />
+    <state width="2107" height="333" key="GridCell.Tab.1.center" timestamp="1609884083377">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.1.center/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083377" />
+    <state width="2107" height="333" key="GridCell.Tab.1.left" timestamp="1609884083377">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.1.left/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083377" />
+    <state width="2107" height="333" key="GridCell.Tab.1.right" timestamp="1609884083378">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.1.right/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083378" />
+    <state width="2107" height="333" key="GridCell.Tab.2.bottom" timestamp="1609884083379">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.2.bottom/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083379" />
+    <state width="2107" height="333" key="GridCell.Tab.2.center" timestamp="1609884083378">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.2.center/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083378" />
+    <state width="2107" height="333" key="GridCell.Tab.2.left" timestamp="1609884083378">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.2.left/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083378" />
+    <state width="2107" height="333" key="GridCell.Tab.2.right" timestamp="1609884083379">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="2107" height="333" key="GridCell.Tab.2.right/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609884083379" />
+    <state width="233" height="457" key="HiddenNamespacesPopup" timestamp="1609295318189">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="233" height="457" key="HiddenNamespacesPopup/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609295318189" />
+    <state x="-290" y="-963" width="900" height="722" key="SettingsEditor" timestamp="1609885152406">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="444" y="-1150" width="1403" height="906" key="SettingsEditor/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609875954731" />
+    <state x="-290" y="-963" width="900" height="722" key="SettingsEditor/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609885152406" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1609822915948">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609822915948" />
+    <state width="500" height="445" key="SwitcherDM/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609042747334" />
+    <state width="500" height="445" key="SwitcherDM/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609569054990" />
+    <state x="832" y="-841" width="337" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1609814277262">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="832" y="-841" width="337" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609814277262" />
+    <state x="52" y="-1140" width="1722" height="805" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1609022231963">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="52" y="-1140" width="1722" height="805" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609022231963" />
+    <state x="-481" y="-1065" width="1004" height="805" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609885471254">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="-481" y="-1065" width="1004" height="805" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609813852598" />
+    <state x="688" y="-1145" width="1004" height="805" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609043655228" />
+    <state x="-481" y="-1065" width="1004" height="805" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609885471254" />
+    <state x="1034" y="-822" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609462508253">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="1034" y="-822" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609105938747" />
+    <state x="1034" y="-822" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609462508253" />
+    <state x="-596" y="-1417" width="1059" height="911" key="dock-window-1" timestamp="1609882927643">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="0" y="0" width="1680" height="1050" key="dock-window-1/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609812105407" />
+    <state x="-596" y="-1417" width="1142" height="1186" key="dock-window-1/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609192514707" />
+    <state x="-596" y="-1417" width="1059" height="911" key="dock-window-1/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609882927643" />
+    <state x="914" y="-377" width="670" height="675" key="run.anything.popup" timestamp="1609885010150">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="914" y="-377" width="670" height="675" key="run.anything.popup/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609885010150" />
+    <state x="-305" y="-925" width="670" height="676" key="search.everywhere.popup" timestamp="1609885933607">
+      <screen x="-596" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="-305" y="-925" width="670" height="676" key="search.everywhere.popup/-596.-1417.2560.1417/0.0.1680.1050@-596.-1417.2560.1417" timestamp="1609822913706" />
+    <state x="457" y="-993" width="670" height="676" key="search.everywhere.popup/-596.-1417.2560.1417/0.23.1440.877@-596.-1417.2560.1417" timestamp="1609220060971" />
+    <state x="-305" y="-925" width="670" height="676" key="search.everywhere.popup/-596.-1417.2560.1417/0.23.1680.1027@-596.-1417.2560.1417" timestamp="1609885933607" />
+  </component>
+</project>
