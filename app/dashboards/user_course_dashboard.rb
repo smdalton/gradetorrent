@@ -64,6 +64,6 @@ class UserCourseDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   # def display_resource(user_course)
-  #   "CoursesUsers ##{user_course.id}"
+  #   "CourseUser ##{user_course.id}"
   # end
 end

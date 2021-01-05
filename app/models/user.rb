@@ -1,12 +1,13 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  attribute :type, :string, default: 'Student'
   belongs_to  :organization
-  has_and_belongs_to_many :course
-  enum role: [:student, :teacher, :admin]
+  has_many :course_users
+  has_many :courses, :through => :course_users
+  # enum role: [:student, :teacher, :admin]
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
   def teacher?
     type == 'Teacher'
   end
@@ -18,5 +19,4 @@ class User < ApplicationRecord
   def administrator?
     type == 'Administrator'
   end
-
 end

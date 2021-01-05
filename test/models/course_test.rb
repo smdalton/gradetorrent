@@ -19,12 +19,6 @@ class CourseTest < ActiveSupport::TestCase
     end
   end
 
-  test 'course does not save unless assosciated user present' do
-    assert_no_difference 'Course.count' do
-      Course.create(name: 'Teacherless Course', organization: @org)
-    end
-  end
-
   test 'course not editable by student' do
 
   end

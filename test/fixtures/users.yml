@@ -11,6 +11,7 @@ shane:
   encrypted_password: "$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG"
   organization: one
 
+
 admin:
   email: admin@admin.com
   name: Administraticus

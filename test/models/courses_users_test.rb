@@ -14,21 +14,21 @@ class CoursesUsersTest < ActiveSupport::TestCase
   end
 
   test 'course saves when user and course is present' do
-    assert_difference 'CoursesUsers.count' do
-      CoursesUsers.create(course: @course, user: @teacher)
+    assert_difference 'CourseUser.count' do
+      CourseUser.create(course: @course, user: @teacher)
 
     end
   end
 
   test 'course does not save when user is absent and course is present' do
-    assert_no_difference 'CoursesUsers.count' do
-      CoursesUsers.create(course: @course)
+    assert_no_difference 'CourseUser.count' do
+      CourseUser.create(course: @course)
     end
   end
 
   test 'course does not save when user is present and course is absent' do
-    assert_no_difference 'CoursesUsers.count' do
-      CoursesUsers.create(user: @teacher)
+    assert_no_difference 'CourseUser.count' do
+      CourseUser.create(user: @teacher)
     end
   end
 

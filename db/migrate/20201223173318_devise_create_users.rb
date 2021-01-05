@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       ## Profile info
       t.string :name
       t.datetime :dob
-      t.string :type
+      t.string :type # required for rails single table inheritance
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at

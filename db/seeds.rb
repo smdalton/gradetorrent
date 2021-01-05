@@ -7,15 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 ActiveSupport::NumberHelper.number_to_human(5)
 
-1.times do |i|
-  Student.create! do |u|
-    u.email = 'smd@gmail.com'
-    u.password = 'password'
-    u.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
-    u.name = Faker::Cosmere.knight_radiant
-    u.organization = Organization.first
-  end
-end
 
 def make_organizations
   3.times do |i|
@@ -28,23 +19,26 @@ def make_organizations
 end
 
 def make_students
-  begin
-    25.times do |i|
-      Student.create! do |u|
-        u.email = Faker::Internet.email
-        u.password = 'password'
-        u.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
-        u.name = Faker::Cosmere.knight_radiant
-        u.organization = Organization.first
-      end
+  225.times do |i|
+    Student.create! do |u|
+      u.email = Faker::Internet.email
+      u.password = 'password'
+      u.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
+      u.name = Faker::Cosmere.knight_radiant
+      u.organization = Organization.first
     end
-  rescue Exception => e
-    ## Skipped email unique constraint checking with rescue block
   end
 end
 
 def make_teachers
   begin
+    Teacher.create! do |t|
+      t.email = 'smd@gmail.com'
+      t.password = 'password'
+      t.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
+      t.name = Faker::Cosmere.knight_radiant
+      t.organization = Organization.first
+    end
     3.times do |i|
       Teacher.create! do |u|
         u.email = Faker::Internet.email
@@ -54,21 +48,20 @@ def make_teachers
         u.organization = Organization.first
       end
     end
-  rescue Exception => e ;end
+  rescue Exception => e;
+  end
 end
 
-def make_administrators
-  begin
-    1.times do |i|
-      Administrator.create! do |u|
-        u.email = Faker::Internet.email
-        u.password = 'password'
-        u.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
-        u.name = Faker::Cosmere.knight_radiant
-        u.organization = Organization.first
-      end
+def make_administrator
+  1.times do |i|
+    Administrator.create! do |u|
+      u.email = Faker::Internet.email
+      u.password = 'password'
+      u.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
+      u.name = Faker::Cosmere.knight_radiant
+      u.organization = Organization.first
     end
-  rescue Exception => e ; end
+  end
 end
 
 def make_courses
@@ -80,6 +73,24 @@ def make_courses
       c.start_date = DateTime.now
       c.end_date = DateTime.now + 1.month
     end
+  end
+end
+
+def assign_students_to_courses
+  courses = Course.all.limit(5).to_a
+  students = Student.all.to_a
+  students.each do |student|
+    4.times do |e|
+      CourseUser.create!(course: courses[e], user: student)
+    end
+  end
+end
+
+def assign_one_teacher_to_each_course
+  teachers = Teacher.all.to_a
+  courses = Course.all.limit(teachers.count).to_a
+  courses.length.times do |i|
+    CourseUser.create!(course: courses[i], user: teachers[i] )
   end
 end
 
@@ -101,6 +112,8 @@ end
 make_organizations
 make_students
 make_teachers
-make_administrators
+# make_administrators
 make_courses
-make_assignments
+assign_students_to_courses
+assign_one_teacher_to_each_course
+# make_assignments
