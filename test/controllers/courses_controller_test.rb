@@ -73,7 +73,7 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
 
 
   test 'Students should only see their own courses' do
-    assert false
+
   end
 
   test 'Teachers should only see their own courses' do

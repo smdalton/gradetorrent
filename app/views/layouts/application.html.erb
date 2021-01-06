@@ -19,9 +19,10 @@
 <% end %>
 <%= render 'layouts/nav' %>
 
-<div class="float-lg-right px-5">
+<div class="float-lg-right px-3">
 <% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
+  Logged in as <strong><%= current_user.email %></strong>. <br>
+    User Privilege level: <strong><%= current_user.type %></strong> <br>
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <% else %>
@@ -29,7 +30,7 @@
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 </div>
-<div class="container">
+<div class="container p-5">
   <%= yield %>
 </div>
 <%= render 'layouts/footer' %>

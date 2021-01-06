@@ -5,5 +5,13 @@
   <p>Teacher creates assignments, students submit and grade each other</p>
   <p class="lead mx-auto">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+
   </p>
+
+  <% if not user_signed_in? %>
+    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
+    <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+  <% end %>
+
+
 </div>
