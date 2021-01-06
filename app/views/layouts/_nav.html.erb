@@ -8,7 +8,9 @@
   <% if user_signed_in? %>
   <div class="collapse navbar-collapse row" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-
+      <li class="nav-item active px-2">
+        <a class="nav-link btn btn-outline-dark" href="/admin">Admin<span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item active px-2">
         <%= link_to 'Courses', courses_url, :class => 'nav-link btn btn-outline-dark'%>
       </li>

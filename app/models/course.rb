@@ -7,7 +7,7 @@ class Course < ApplicationRecord
   validates_presence_of :organization
 
   def teacher
-    CourseUser.joins(:user).where('users.type = "Teacher"').where(course: self).first
+    CourseUser.joins(:user).where('users.type = "Teacher"').where(course: self).first.user
   end
 
   def students

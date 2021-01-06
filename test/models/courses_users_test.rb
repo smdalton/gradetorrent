@@ -16,7 +16,6 @@ class CoursesUsersTest < ActiveSupport::TestCase
   test 'course saves when user and course is present' do
     assert_difference 'CourseUser.count' do
       CourseUser.create(course: @course, user: @teacher)
-
     end
   end
 
@@ -32,9 +31,7 @@ class CoursesUsersTest < ActiveSupport::TestCase
     end
   end
 
-  test 'courses_users returns correct teacher when model method called' do
 
-  end
 
 
 

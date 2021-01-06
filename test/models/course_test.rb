@@ -13,10 +13,12 @@ class CourseTest < ActiveSupport::TestCase
   end
 
   test 'course does not save unless organization present' do
-    assert_no_difference 'Course.count' do
-      Course.create(name: 'Test Name')
+    assert_not Course.new(name: 'Test Name').save
+  end
 
-    end
+  test 'Course returns correct teacher when model method called' do
+    CourseUser.create!(course: @course, user: @teacher)
+    assert @course.teacher == @teacher
   end
 
   test 'course not editable by student' do
