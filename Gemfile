@@ -5,6 +5,8 @@ ruby '2.7.0'
 gem 'devise'
 gem 'faker'
 gem 'bootstrap-sass'
+gem 'bootstrap'
+gem 'bootswatch', github: 'thomaspark/bootswatch'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use Puma as the app server

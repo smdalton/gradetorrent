@@ -19,6 +19,13 @@ def make_organizations
 end
 
 def make_students
+  Student.create do |u|
+    u.email = 'smdstudent@gmail.com'
+    u.password = 'password'
+    u.encrypted_password = '$2a$11$MK9LXCGG9wbztJk7eXi5zeZju.Re1HWTL8UfMffElwMTGUbhMbCoG'
+    u.name = Faker::Cosmere.knight_radiant
+    u.organization = Organization.first
+  end
   225.times do |i|
     Student.create! do |u|
       u.email = Faker::Internet.email
@@ -86,7 +93,7 @@ def assign_students_to_courses
   end
 end
 
-def assign_one_teacher_to_each_course
+def assign_teachers_to_courses
   teachers = Teacher.all.to_a
   courses = Course.all.limit(teachers.count)
   courses.length.times do |i|
@@ -115,5 +122,5 @@ make_teachers
 # make_administrators
 make_courses
 assign_students_to_courses
-assign_one_teacher_to_each_course
+assign_teachers_to_courses
 # make_assignments

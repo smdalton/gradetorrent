@@ -1,5 +1,6 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
+  # TODO:  before_action :change_authorized, only: [:edit, :update, :destroy]
 
   # GET /courses
   # GET /courses.json
@@ -10,11 +11,16 @@ class CoursesController < ApplicationController
   # GET /courses/1
   # GET /courses/1.json
   def show
+
   end
 
   # GET /courses/new
   def new
-    @course = Course.new
+    if current_user.teacher?
+      @course = Course.new
+    elsif current_user.student?
+      redirect_to courses_path
+    end
   end
 
   # GET /courses/1/edit
@@ -24,15 +30,18 @@ class CoursesController < ApplicationController
   # POST /courses
   # POST /courses.json
   def create
-    @course = Course.new(course_params)
-
-    respond_to do |format|
-      if @course.save
-        format.html { redirect_to @course, notice: 'Course was successfully created.' }
-        format.json { render :show, status: :created, location: @course }
-      else
-        format.html { render :new }
-        format.json { render json: @course.errors, status: :unprocessable_entity }
+    if current_user.student?
+      redirect_to root_path
+    elsif current_user.teacher?
+      @course = Course.new(course_params)
+      respond_to do |format|
+        if @course.save
+          format.html { redirect_to @course, notice: 'Course was successfully created.' }
+          format.json { render :show, status: :created, location: @course }
+        else
+          format.html { render :new }
+          format.json { render json: @course.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
@@ -62,13 +71,18 @@ class CoursesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_course
-      @course = Course.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def course_params
-      params.require(:course).permit(:name, :description, :start_date, :end_date, :organization_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_course
+    @course = Course.find(params[:id])
+  end
+
+  def change_authorized
+    current_user.teacher? || current_user.administrator?
+  end
+
+  # Only allow a list of trusted parameters through.
+  def course_params
+    params.require(:course).permit(:name, :description, :start_date, :end_date, :organization_id)
+  end
 end

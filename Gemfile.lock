@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/thomaspark/bootswatch.git
+  revision: b16ad79f7f2fe4119b3a8fdfd00876a353b3fb3e
+  specs:
+    bootswatch (4.5.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,6 +76,10 @@ GEM
     bindex (0.8.1)
     bootsnap (1.5.1)
       msgpack (~> 1.0)
+    bootstrap (4.5.3)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -179,6 +189,7 @@ GEM
       shellany (~> 0.0)
     orm_adapter (0.5.0)
     pg (1.2.3)
+    popper_js (1.16.0)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -311,7 +322,9 @@ PLATFORMS
 DEPENDENCIES
   benchmark-ips
   bootsnap (>= 1.4.2)
+  bootstrap
   bootstrap-sass
+  bootswatch!
   byebug
   capybara (>= 2.15)
   devise
